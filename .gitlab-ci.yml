@@ -1,4 +1,11 @@
 # The Docker image that will be used to build your app
-image: 'image: busybox pages:  stage: deploy  script:  - echo "The site will be
-  deployed to $CI_PAGES_URL"  artifacts:  paths:  - public  rules:  - if:
-  $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+image: busybox
+pages:
+ stage: deploy
+ script:
+ - echo "The site will be deployed to $CI_PAGES_URL"
+ artifacts:
+ paths:
+ - public
+ rules:
+ - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
