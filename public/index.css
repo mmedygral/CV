@@ -18,9 +18,7 @@ body{
 /* 3 */
 #navbar{
     margin:0;
-    padding-bottom: 13px;
     width:100%;
-    height:30px;
     position: sticky;
     left:0; 
     top:0;
@@ -28,13 +26,13 @@ body{
     background-color: white;
     overflow: hidden;
     z-index: 1000;
+    display:flex;
 }
-
 /* 4 */
 #navbar ul{
     display:flex; 
     margin:10px auto;
-    width:55%;
+    width:80%;
     justify-content: space-evenly;
     list-style:none; 
 }
@@ -60,18 +58,62 @@ li a:hover{
 
 }
 
+
+
+
+.hamburger-size{
+    height:40px;
+
+}
+.hamburger{
+    position: absolute;
+    display:none;
+    top: 0.75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+.hamburger .bar{
+    display: block;
+    height:3px;
+    width:100%;
+    background-color: black;
+    border-radius: 10px;
+}
+@media (max-width: 1273px){
+    .hamburger{
+        display:flex;
+    }
+    .nav-menu li{
+        display:none;
+        padding:5px;
+    }
+    .nav-menu{
+        flex-direction: column;
+    }
+    .nav-menu.active li{
+        display:flex;
+    }
+}
+
+
+
+
+
 /* 7 */
 .header{
     width:100%;
     height:800px;
     display:flex;
-    align-items: flex-start;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     background-image: url(images/Header.jpeg);
     background-position: center;
 }
 .header_box{
-    width:35%;
+    width:40%;
     height:100%;
 }
 .header_text{
@@ -92,7 +134,7 @@ li a:hover{
 
 }
 .bg{
-    width:35%;
+    width:40%;
     height:800px;
     position:absolute;
     background-color: rgb(146, 146, 146);
@@ -102,6 +144,10 @@ li a:hover{
 .header_text h1{
     color:white;
 }
+.marks a{
+    color:white;
+    margin-right:15px;
+}
 .marks a:hover{
     color:black;
     transition: 0.5s;
@@ -109,6 +155,14 @@ li a:hover{
 .marks p{
     font-size: 1.2rem;
     font-weight: bold;
+}
+@media (max-width:400px){
+    .header_text h1{
+        font-size: 30px;
+    }
+    .header_text h2{
+        font-size: 20px;
+    }
 }
 
 /* 8 */
@@ -179,23 +233,28 @@ li a:hover{
 
 }
 
-.experience-list li{
+#experience li{
     padding:3px;
 }
-#experience h3, h4{
+#experience h1{
+    color:rgb(45, 184, 45);
+}
+#experience  h2, h3, h4{
     display:inline-block;
     margin:0;
     padding:3px;
 }
-#experience .course{
-    color:rgb(36, 185, 36);
-}
+
 #experience .date{
     font-style: italic;
     font-weight: bold;
 }
 #experience .inf{
     font-size: 0.8rem;
+}
+#experience .trip{
+    margin-top:10px;
+    margin-bottom: 50px;
 }
 /* 13 */
 div.my-information{
@@ -209,7 +268,12 @@ div.my-information{
 #skill-section{
     background-color: black;
     color:white;
-    padding-top:10px;
+    padding-bottom: 100px;
+}
+.section-heading{
+    padding-bottom: 80px;
+    padding-top:50px;
+    font-size: 32px;
 }
 #skill-section h1{
     text-align: center;
@@ -219,10 +283,9 @@ div.my-information{
     flex-wrap:wrap; 
     width:80%;
     margin:auto; 
-    justify-content: center; 
+    justify-content: space-evenly; 
 }
 .skill-information{
-    margin:32px;
     text-align: center;
 }
 .skill-name{
@@ -231,14 +294,14 @@ div.my-information{
     font-size: 1.5rem; 
 }
 #selenium{
-    color:white;
     background-color: white;
-    border:px solid white;
 }
 
 .skill-information progress{
     background-color: white;
     border:1px solid white;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .skill-information progress::-webkit-progress-value{
@@ -248,44 +311,4 @@ div.my-information{
 
 .skill-information progress::-webkit-progress-bar{
     background-color: black;
-}
-
-/* 15 */
-.projects-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.image-box{
-    margin:5px;
-    align-items: center;
-}
-.image-box a{
-    text-decoration: none;
-    text-align: center;
-    color:black;
-}
-.image-box img{
-    height:300px;
-    width:450px;
-}
-
-/* 16 */
-
-#contact-section{
-    background-color: black;
-    color:white;
-    margin-top: 50px;
-    padding:50px;
-    text-align:center;
-    font-size: 24px;
-}
-#contact-section a{
-    color: white;
-    margin-right: 10px;
-}
-.marks a{
-    color:rgb(255, 255, 255);
-    padding-left: 0.9rem;
-
 }
