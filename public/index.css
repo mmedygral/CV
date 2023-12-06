@@ -169,7 +169,7 @@ li a:hover{
 #About{
     display:flex;
     justify-content: space-evenly; 
-    margin:70px;
+    margin:70px 70px 120px 70px;
     align-items: center;
     
 }
