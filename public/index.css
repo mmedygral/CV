@@ -217,13 +217,13 @@ li a:hover{
 
 
 
-#experience{
+.experience{
     margin: 150px 70px;
     width:70%;
     margin: auto;
     
 }
-#experience h1{
+.experience h1{
     font-size: 2rem;
 
 }
@@ -233,26 +233,26 @@ li a:hover{
 
 }
 
-#experience li{
+.experience li{
     padding:3px;
 }
-#experience h1{
+.experience h1{
     color:rgb(45, 184, 45);
 }
-#experience  h2, h3, h4{
+.experience  h2, h3, h4{
     display:inline-block;
     margin:0;
     padding:3px;
 }
 
-#experience .date{
+.experience .date{
     font-style: italic;
     font-weight: bold;
 }
-#experience .inf{
+.experience .inf{
     font-size: 0.8rem;
 }
-#experience .trip{
+.experience .trip{
     margin-top:10px;
     margin-bottom: 50px;
 }
