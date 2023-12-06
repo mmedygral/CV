@@ -295,6 +295,7 @@ div.my-information{
 }
 #selenium{
     background-color: white;
+    border: 1px solid white;
 }
 
 .skill-information progress{
@@ -306,9 +307,26 @@ div.my-information{
 
 .skill-information progress::-webkit-progress-value{
     background-color: white;
+    transition: width 1s;
     border-radius: 0;
 }
 
 .skill-information progress::-webkit-progress-bar{
     background-color: black;
+}
+.progress-bar{
+    width:158px;
+    height:18px;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-top:15px;
+
+}
+.progress-content{
+    width:0;
+    height:100%;
+    background-color: white;
+    border-radius: 1rem;
+    transition: width 1s;
 }
