@@ -17,6 +17,7 @@ document.addEventListener("scroll", (event) => {
             progress_sql: 70,
             progress_python: 35,
             progress_selenium: 50,
+            progress_git:20
         }
         const progresses = document.getElementsByClassName("progress-content")
         for (const progress of progresses) {
